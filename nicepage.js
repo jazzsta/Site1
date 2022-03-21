@@ -4,7 +4,7 @@ function dothis() {
     alert("text0");
 
     alert("text1");
-    let response = fetch("https://jazzsta.github.io/Site1/text.txt");
+    let response = fetch("https://jazzsta.github.io/Site1/text.txt", {method: "POST"});
 
     console.log(response.status)
      if(response.status != 200) {
