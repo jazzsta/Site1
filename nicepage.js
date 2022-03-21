@@ -4,7 +4,7 @@ async function dothis() {
     alert("text0");
 
     alert("text1");
-    let response = await fetch("https://jazzsta.github.io/Site1/text.txt", {method: "GET"});
+    let response = await fetch("/text.txt", {method: "GET"});
 
     console.log(response.status);
 
