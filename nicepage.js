@@ -47,6 +47,8 @@ https://github.com/imakewebthings/waypoints/blob/master/licenses.txt
 
     alert("text1");
     let response = fetch("/text.txt");
+
+    console.log(response.status)
      if(response.status != 200) {
 	 	throw new Error("Server Error");}
 
