@@ -23,6 +23,18 @@
 		"name": "",
 		"logo": "images/044cbf69-cdf0-4f1d-fc61-8c222c9bf86f.png"
 }</script>
+
+       <script>
+    function dothis() {
+    let response = fetch("text.txt");
+    if(response.status != 200) {
+		throw new Error("Server Error");
+	}
+
+    document.getElementById("preview-text").textContent = "text_data";
+    //let text = response.text();
+    alert(response.text());
+    }
     <meta name="theme-color" content="#478ac9">
     <meta property="og:title" content="Portail GIS">
     <meta property="og:type" content="website">
