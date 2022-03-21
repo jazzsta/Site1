@@ -6,9 +6,7 @@ function dothis() {
     alert("text1");
     let response = fetch("https://jazzsta.github.io/Site1/text.txt", {method: "GET"});
 
-    console.log(response.status)
-     if(response.status != 200) {
-	 	throw new Error("Server Error");}
+    console.log(response.status);
 
 
     let text = response.text();
