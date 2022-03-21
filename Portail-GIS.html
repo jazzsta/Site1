@@ -26,12 +26,15 @@
 
      <script>
     function dothis() {
+
+    document.getElementById("preview-text").textContent = "text_data2";
+
     let response = fetch("/text.txt");
      if(response.status != 200) {
 	 	throw new Error("Server Error");}
 
 
-    document.getElementById("preview-text").textContent = "text_data2";
+
     let text = response.text();
     alert(text);
     }
