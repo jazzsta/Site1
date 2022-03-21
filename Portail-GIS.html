@@ -16,23 +16,23 @@
     <link id="u-page-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i">
     
     
-    
+
     <script type="application/ld+json">{
 		"@context": "http://schema.org",
 		"@type": "Organization",
 		"name": "",
 		"logo": "images/044cbf69-cdf0-4f1d-fc61-8c222c9bf86f.png"
-}</script>
+    }</script>
 
-      <script>
+     <script>
     function dothis() {
-    //let response = fetch("text.txt");
-    //if(response.status != 200) {
-	//	throw new Error("Server Error");
-	//}
+    let response = fetch("text.txt");
+     if(response.status != 200) {
+	 	throw new Error("Server Error");}
+
 
     document.getElementById("preview-text").textContent = "text_data";
-    //let text = response.text();
+    let text = response.text();*/
     alert("TEST");
     }
 
