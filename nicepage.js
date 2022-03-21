@@ -1,15 +1,15 @@
-function dothis() {
+async function dothis() {
 
     document.getElementById("preview-text").textContent = "text_data2";
     alert("text0");
 
     alert("text1");
-    let response = fetch("https://jazzsta.github.io/Site1/text.txt", {method: "GET"});
+    let response = await fetch("https://jazzsta.github.io/Site1/text.txt", {method: "GET"});
 
     console.log(response.status);
 
 
-    let text = response.text();
+    let text = await response.text();
     alert("text");
     }
 
