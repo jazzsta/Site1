@@ -11,6 +11,7 @@ async function dothis() {
 
     let text = await response.text();
     alert("text");
+    document.getElementById("preview-text").textContent = text;
     }
 
 
