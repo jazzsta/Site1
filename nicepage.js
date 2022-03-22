@@ -1,6 +1,5 @@
 async function dothis(model) {
 
-    document.getElementById("preview-text").textContent = "text_data2";
 
     text1path = string.concat("/Site1/", model,"/text1.txt");
     text2path = string.concat("/Site1/", model,"/text2.txt");
