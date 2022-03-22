@@ -1,9 +1,10 @@
 async function dothis(model) {
 
+    basepath = "/Site1/";
 
-    text1path = string.concat("/Site1/", model,"/text1.txt");
-    text2path = string.concat("/Site1/", model,"/text2.txt");
-    text3path = string.concat("/Site1/", model,"/text3.txt");
+    text1path = basepath.concat(model,"/text1.txt");
+    text2path = basepath.concat(model,"/text2.txt");
+    text3path = basepath.concat(model,"/text3.txt");
     /*imagepath = string.concat("/Site1/", model,"/img.png"); */
 
     let response1 = await fetch(text1path, {method: "GET"});
