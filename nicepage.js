@@ -8,7 +8,7 @@ async function dothis() {
 
 
     let text = await response.text();
-    
+
     document.getElementById("preview-text").textContent = text;
     }
 
