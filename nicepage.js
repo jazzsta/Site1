@@ -1,16 +1,14 @@
 async function dothis() {
 
     document.getElementById("preview-text").textContent = "text_data2";
-    alert("text0");
 
-    alert("text1");
     let response = await fetch("/Site1/text.txt", {method: "GET"});
 
     console.log(response.status);
 
 
     let text = await response.text();
-    alert("text");
+    
     document.getElementById("preview-text").textContent = text;
     }
 
