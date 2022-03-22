@@ -11,7 +11,7 @@ async function dothis(model) {
     let response3 = await fetch(text3path, {method: "GET"});
     /*let response4 = await fetch(imagepath, {method: "GET"});*/
 
-    console.log(response.status);
+    console.log(response1.status);
 
     let text1 = await response1.text();
     let text2 = await response2.text();
