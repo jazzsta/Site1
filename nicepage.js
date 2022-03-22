@@ -1,15 +1,26 @@
-async function dothis() {
+async function dothis(model) {
 
     document.getElementById("preview-text").textContent = "text_data2";
 
-    let response = await fetch("/Site1/text.txt", {method: "GET"});
+    text1path = string.concat("/Site1/", model,"/text1.txt");
+    text2path = string.concat("/Site1/", model,"/text2.txt");
+    text3path = string.concat("/Site1/", model,"/text3.txt");
+    /*imagepath = string.concat("/Site1/", model,"/img.png"); */
+
+    let response1 = await fetch(text1path, {method: "GET"});
+    let response2 = await fetch(text2path, {method: "GET"});
+    let response3 = await fetch(text3path, {method: "GET"});
+    /*let response4 = await fetch(imagepath, {method: "GET"});*/
 
     console.log(response.status);
 
+    let text1 = await response1.text();
+    let text2 = await response2.text();
+    let text3 = await response3.text();
 
-    let text = await response.text();
-
-    document.getElementById("preview-text").textContent = text;
+    document.getElementById("elem1").textContent = text1;
+    document.getElementById("elem2").textContent = text2;
+    document.getElementById("elem3").textContent = text3;
     }
 
 
