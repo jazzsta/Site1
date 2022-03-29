@@ -1,6 +1,6 @@
  .u-section-1 {
   background-image: url("images/5904526941181c6b5050921acb650b7868121a11eb1569548afa307f8cc83322c90d03a826e99a6441fbad080ebf77c2c22bd2eb3edddd335c17d3_1280.jpg");
-  background-position: 50% 50%;
+   background-position: 50% 50%;
 }
 
 .u-section-1 .u-sheet-1 {
@@ -16,13 +16,13 @@
 }
 
 .u-section-2 .u-sheet-1 {
-  min-height: 864px;
+  /*min-height: 864px;*/
 }
 
 .u-section-2 .u-text-1 {
   font-weight: 700;
   font-size: 2.25rem;
-  width: 836px;
+  /*width: 836px;*/
   margin: 60px auto 0;
 }
 
@@ -384,4 +384,10 @@
     font-size: 1.5rem;
     width: 340px;
   }
+}
+
+.ProjectDescriptionBox{
+    width: auto !important;
+    height: auto !important;
+    text-align: justify;
 }

@@ -1,3 +1,24 @@
+async function insertTxt(fromPath,intoElem) {
+
+
+
+    let response = await fetch(fromPath, {method: "GET"});
+
+    /*console.log(response.status);*/
+
+    let text = await response.text();
+
+
+    text=text.replace(/(\r\n|\n|\r)/gm,"</p><p>")
+
+    startext="<p>"
+    text=startext.concat(text)
+    text=text.concat("</p>")
+
+    document.getElementById(intoElem).innerHTML = text;
+
+    }
+
 async function dothis(model) {
 
     basepath = "/Site1/";
@@ -5,13 +26,13 @@ async function dothis(model) {
     text1path = basepath.concat(model,"/text1.txt");
     text2path = basepath.concat(model,"/text2.txt");
     text3path = basepath.concat(model,"/text3.txt");
-    /*imagepath = string.concat("/Site1/", model,"/img.png"); */
+    /*imagepath = string.concat("/Site1/", model,"/img.png");
 
     let response1 = await fetch(text1path, {method: "GET"});
     let response2 = await fetch(text2path, {method: "GET"});
-    let response3 = await fetch(text3path, {method: "GET"});
+    let response3 = await fetch(text3path, {method: "GET"});*/
     /*let response4 = await fetch(imagepath, {method: "GET"});*/
-
+    /*
     console.log(response1.status);
 
     let text1 = await response1.text();
@@ -20,7 +41,11 @@ async function dothis(model) {
 
     document.getElementById("elem1").textContent = text1;
     document.getElementById("elem2").textContent = text2;
-    document.getElementById("elem3").textContent = text3;
+    document.getElementById("elem3").textContent = text3;*/
+
+    insertTxt(text1path,"elem1");
+    insertTxt(text2path,"elem2");
+    insertTxt(text3path,"elem3");
     }
 
 

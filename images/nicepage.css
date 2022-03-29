@@ -11167,8 +11167,8 @@ section.u-image:not(.u-hover-box),
   position: fixed;
 }
 .u-overlap.u-overlap-transparent .u-header {
-  background-color: transparent !important;
-  background-image: none !important;
+  background-color: red;  /* transparent !important;
+  background-image: none !important;*/
 }
 .u-overlap.u-offcanvas-opened .u-header.u-sticky {
   z-index: auto;
@@ -36416,7 +36416,6 @@ a.u-link.u-text-hover-grey-90:hover {
         
         
         
-        
         }
 
         /** common-rules **/
@@ -36533,10 +36532,6 @@ a.u-link.u-text-hover-grey-90:hover {
         {
         margin-top: 20px;
         margin-bottom: 20px;
-        }
-        .u-body
-        {
-        background-attachment: fixed;
         }
         /** common-rules **/
 
@@ -36698,15 +36693,15 @@ a.u-link.u-text-hover-grey-90:hover {
 
 /*end-variables sitestylecss*/
  .u-header {
-  background-image: linear-gradient(#adcce9, #e5e5e5);
+  background-image: none;
 }
 
 .u-header .u-sheet-1 {
-  min-height: 122px;
+  min-height: 182px;
 }
 
 .u-header .u-menu-1 {
-  margin: 10px auto 0 22px;
+  margin: 24px auto 0 22px;
 }
 
 .u-header .u-nav-1 {
@@ -36732,12 +36727,13 @@ a.u-link.u-text-hover-grey-90:hover {
 }
 
 .u-header .u-text-1 {
-  margin: 10px 273px 10px 321px;
+  margin: 20px 281px 50px 313px;
 }
 @media (max-width: 1199px) {
   .u-header .u-menu-1 {
     width: auto;
     margin-right: 100px;
+    margin-left: 22px;
   }
 
   .u-header .u-text-1 {
