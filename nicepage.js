@@ -1,6 +1,4 @@
-async function insertTxt(fromPath,intoElem) {
-
-
+async function insertHtml(fromPath,intoElem) {
 
     let response = await fetch(fromPath, {method: "GET"});
 
@@ -19,6 +17,14 @@ async function insertTxt(fromPath,intoElem) {
 
     }
 
+
+async function insertLink(fromPath,intoElem){
+    let response = await fetch(fromPath, {method: "GET"});
+    let link = await response.text();
+
+    document.getElementById(intoElem).setAttribute('href', link);
+    }
+
 async function dothis(model) {
 
     basepath = "/Site1/";
@@ -26,26 +32,16 @@ async function dothis(model) {
     text1path = basepath.concat(model,"/text1.txt");
     text2path = basepath.concat(model,"/text2.txt");
     text3path = basepath.concat(model,"/text3.txt");
-    /*imagepath = string.concat("/Site1/", model,"/img.png");
 
-    let response1 = await fetch(text1path, {method: "GET"});
-    let response2 = await fetch(text2path, {method: "GET"});
-    let response3 = await fetch(text3path, {method: "GET"});*/
-    /*let response4 = await fetch(imagepath, {method: "GET"});*/
-    /*
-    console.log(response1.status);
+    insertHtml(text1path,"elem1");
+    insertHtml(text2path,"elem2");
+    insertHtml(text3path,"elem3");
 
-    let text1 = await response1.text();
-    let text2 = await response2.text();
-    let text3 = await response3.text();
+    link1path = basepath.concat(model,"/dlink.txt");
+    link2path = basepath.concat(model,"/tlink.txt");
 
-    document.getElementById("elem1").textContent = text1;
-    document.getElementById("elem2").textContent = text2;
-    document.getElementById("elem3").textContent = text3;*/
-
-    insertTxt(text1path,"elem1");
-    insertTxt(text2path,"elem2");
-    insertTxt(text3path,"elem3");
+    insertLink(link1path,'download');
+    insertLink(link2path,'tutorial');
     }
 
 
