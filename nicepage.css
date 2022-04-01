@@ -5589,6 +5589,7 @@ ul.u-text li:last-child {
 .u-text-default {
   display: table;
   align-self: flex-start;
+  text-align: justify;
 }
 .u-text-default:empty {
   display: block;
@@ -36772,8 +36773,6 @@ a.u-link.u-text-hover-grey-90:hover {
   width: 100%;
   height: 100%;
 }
-
-
 
 
 
