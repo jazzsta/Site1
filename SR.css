@@ -9,7 +9,7 @@
 
 .u-section-1 .u-image-1 {
   min-height: 472px;
-  background-image: url("hydroshoot/1.png");
+  background-image: url("sysracinaire/1.png");
   background-position: 50% 50%;
 }
 
@@ -94,7 +94,7 @@
     min-height: 281px;
   }
 } .u-section-2 {
-  background-image: linear-gradient(0deg, rgba(0,0,0,0.55), rgba(0,0,0,0.55)), url("hydroshoot/2.png");
+  background-image: linear-gradient(0deg, rgba(0,0,0,0.55), rgba(0,0,0,0.55)), url("sysracinaire/2.png");
   background-position: 50% 50%;
 }
 
