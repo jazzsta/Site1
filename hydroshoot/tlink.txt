@@ -1,1 +1,1 @@
-https://doi.org/10.1093/insilicoplants/diz007
+https://hydroshoot.readthedocs.io/en/latest/
