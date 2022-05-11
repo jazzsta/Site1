@@ -434,3 +434,13 @@
 .u-section-2 .u-list-item-9.u-list-item-9.u-list-item-9.hover {
   box-shadow: 2px 2px 8px 0 rgba(128,128,128,1) !important;
 }
+
+.oneline {
+    float: left;
+    display: table-row;
+}
+
+.tablecell{
+    float: left;
+    display: inline;
+}
