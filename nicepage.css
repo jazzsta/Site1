@@ -36787,8 +36787,18 @@ a.u-link.u-text-hover-grey-90:hover {
      display:block;
      margin-left: auto;
      margin-right: auto;
+     /*width: 363px;
+     height: 96px;*/
 }
-
+ulogo{
+     width: 3px;
+     height: 123396px;
+     border-radius: 50%;
+     display: block;
+     margin-left: auto;
+      margin-right: auto;
+     width: 50%;
+}
 
 
 
